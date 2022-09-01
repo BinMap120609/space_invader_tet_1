@@ -168,3 +168,5 @@ while running:
     show_score(textX,textY)
     player(playerX,playerY)
     pygame.display.update() 
+
+# bin map dit thui  
