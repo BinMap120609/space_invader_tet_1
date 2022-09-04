@@ -1,6 +1,5 @@
 from ast import Return
 from asyncore import loop
-from msilib import datasizemask
 from socket import SO_RCVBUF
 import pygame
 import random
@@ -25,7 +24,6 @@ playerY = 480
 playerX_change = 0
 
 def player(x,y):
-    print(playerImg)
     screen.blit(playerImg,(x,y))
 
 # enemy
@@ -43,7 +41,6 @@ for i in range(num_of_enemies) :
     enemyX_change.append(0.175)
     enemyY_change.append(39)
     
-print(enemyX, enemyY)
 
 def enemy(x, y, i) :
     screen.blit(enemyImg[i], (x, y))
